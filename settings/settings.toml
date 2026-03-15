@@ -1,0 +1,37 @@
+[default]
+project_name = "party-purse"
+log_level = "INFO"
+data_dir = "data"
+models_dir = "models"
+
+# Parties to track
+parties_tracked = ["Reform UK", "Labour", "Conservative", "Green Party"]
+
+# Data sources
+electoral_commission_url = "http://search.electoralcommission.org.uk/"
+timeout_seconds = 30
+retry_attempts = 3
+
+# Snowflake
+snowflake_account = "your-account"
+snowflake_database = "PARTY_PURSE"
+snowflake_schema = "PUBLIC"
+snowflake_warehouse = "PARTY_PURSE_WH"
+
+# LLM settings
+llm_model = "deepseek-chat"
+llm_temperature = 0.1
+
+[development]
+environment = "development"
+log_level = "DEBUG"
+timeout_seconds = 60  # Longer timeout for debugging
+
+[staging]
+environment = "staging"
+snowflake_warehouse = "PARTY_PURSE_STAGING_WH"
+
+[production]
+environment = "production"
+log_level = "WARNING"
+snowflake_warehouse = "PARTY_PURSE_PROD_WH"
