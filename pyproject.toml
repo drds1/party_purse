@@ -40,5 +40,5 @@ build-backend = "poetry.core.masonry.api"
 [tool.pytest.ini_options]
 minversion = "6.0"
 testpaths = ["tests"]
-pythonpath = ["."]  # This is key - adds project root to path
+pythonpath = ["."]
 addopts = "-v --tb=short"
