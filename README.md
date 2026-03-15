@@ -8,7 +8,7 @@ Author: David Starkey
 
 Tracking the money behind UK politics. Automated donation data → structured by LLMs → visualized in Streamlit. Open source, quarterly updates, full transparency.
 
-This project was generated from the ML Project Template.  
+This project was generated from the ML Project Template.
 It includes:
 
 - Python environment managed with Poetry
@@ -68,19 +68,19 @@ It includes:
 
 ## Project Structure
 
-- `src/party_purse/` → main Python package  
-- `flows/` → Metaflow pipelines  
-- `dashboard/` → Streamlit app  
-- `.pre-commit-config.yaml` → pre-commit hooks  
-- `.github/workflows/` → CI with GitHub Actions  
-- `Makefile` → unified commands for development workflow  
+- `src/party_purse/` → main Python package
+- `flows/` → Metaflow pipelines
+- `dashboard/` → Streamlit app
+- `.pre-commit-config.yaml` → pre-commit hooks
+- `.github/workflows/` → CI with GitHub Actions
+- `Makefile` → unified commands for development workflow
 
 ---
 
 ## Notes
 
-- This project is ready to run immediately after generation  
-- Replace placeholder code in `flows/main_flow.py`, `dashboard/app.py`, and `src/party_purse/experiment.py` with your own logic  
+- This project is ready to run immediately after generation
+- Replace placeholder code in `flows/main_flow.py`, `dashboard/app.py`, and `src/party_purse/experiment.py` with your own logic
 - All commands can be run via `make` for simplicity
 
 ---
